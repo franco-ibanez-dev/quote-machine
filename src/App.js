@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import axios from 'axios';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  const myStyle = {
+    width: "500px",
+    marginTop: "200px",
+  }
+return (
+  <div className="App">
+    <div id="quote-box" className="card block mx-auto bg-primary bg-gradient" style={myStyle}>
+      <span id="text">laksj</span>
+      <span id="author">asdf</span>
+      <button id="new-quote" className="btn btn-success">New Quote</button>
+      <a id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer">Send your own message <i className="lab la-twitter"></i></a>
     </div>
-  );
+  </div >
+);
 }
 
 export default App;
